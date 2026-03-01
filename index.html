@@ -11,11 +11,11 @@
 </head>
 <body>
     <!-- Part-1 -->
-     <section class="w-[80%] mx-auto space-y-6 pb-10 border-b-2 border-b-[#E6E7E9]">
+     <section class="w-[78%] mx-auto space-y-6 pb-10 border-b-2 border-b-[#E6E7E9]">
         <div>
             <h1 class="text-black font-extrabold pt-[60px] text-[32px]">Job Application Tracker</h1>
         </div> 
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="bg-white shadow-2xl  rounded-2xl py-5 pl-4">
                 <h1 class="font-bold">Total</h1>
                 <p id="total" class="font-extrabold">0</p>
@@ -33,16 +33,16 @@
         </div>
      </section>
     <!-- Part-2 -->
-     <section class="w-[80%] mx-auto pt-[30px] mb-6">
+     <section class="w-[78%] mx-auto pt-[30px] mb-6">
 
         <div class="">
             <h1 class="text-black font-bold text-[30px]">Available Jobs</h1>
         </div>
         
         <div class="gap-5 mt-5">
-            <button id="all-btn"       class="bg-[#3B82F6] px-4 py-1.5 rounded-2xl text-white cursor-pointer">All</button>
-            <button id="Interview-btn" class="bg-gray-300 px-4 py-1.5 rounded-2xl text-[#64748B] cursor-pointer">Interview</button>
-            <button id="Rejected-btn"  class="bg-gray-300 px-4 py-1.5 rounded-2xl text-[#64748B] cursor-pointer">Rejected</button>
+            <button id="tab-all" onclick="switchTab('all')" class="px-5 py-1.5 rounded-full text-sm border-2 font-medium cursor-pointer transition-all duration-200">All</button>
+            <button id="tab-interview" onclick="switchTab('interview')" class="px-5 py-1.5 rounded-full text-sm border-2 font-medium cursor-pointer transition-all duration-200">Interview</button>
+            <button id="tab-rejected" onclick="switchTab('rejected')" class="px-5 py-1.5 rounded-full text-sm border-2 font-medium cursor-pointer transition-all duration-200">Rejected</button>
         </div>
      </section>
     <!-- Part-3 -->
@@ -221,13 +221,7 @@
         </div>
       </section>
     <!-- part-4 -->
-     <section class="w-[80%] mx-auto flex justify-center items-center bg-white shadow-2xl rounded-3xl mt-[111px] h-[400px] mb-6">
-        <div class="flex flex-col items-center text-center">
-            <img src="jobs.png" alt="NO JOBS">
-            <h1 class="font-semibold text-[24px] text-[#002C5C]">No jobs available</h1>
-            <p class="text-[#64748B]">Check back soon for new job opportunities</p>
-        </div>
-     </section>
+     
      <script src="script.js"></script>
 </body>
 </html>
